@@ -1,42 +1,193 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<title>Untitled Document</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>Untitled Document</title>
         <script type="text/javascript">
             //<![CDATA[
             function stMore(me){
                 var lesstext = me.nextElementSibling;
                 var more = lesstext.nextElementSibling;
-                me.style.display="none";
-                lesstext.style.display="";
-                more.style.display="";
+                me.style.display = "none";
+                lesstext.style.display = "";
+                more.style.display = "";
             }
+            
             function stLess(me){
                 var moretext = me.previousElementSibling;
                 var more = me.nextElementSibling;
-                moretext.style.display="";
-                me.style.display="none";
-                more.style.display="none";
+                moretext.style.display = "";
+                me.style.display = "none";
+                more.style.display = "none";
             }
+            
             //]]>
         </script>
-	</head>
-	<body>
-	    main text
-	    <div>
-            <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
-    	        <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span> 
-                More information
-            </div>
-            <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
-                <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span> 
-                Less information
-            </div>
-            <div style="display:none;color:black;position:relative;left:20px">
-                here is more information<br/>on the subject you requested
-            </div>
-	    </div>
-        further text
-	</body>
+    </head>
+    <body style='font-family:serif;font-size:large;'>
+    <P>
+        This is the home page of "Morashon: The Open Source Musical".  I am seeking collaborators who are able and willing to help me realize this vision.
+    </P>
+    <P>
+        Links to the trailer:
+        <br/>
+        Click here for the webm version.  WebM is a great new open format supported by 
+        Google [link to webm site]. 
+        It should work in any recent version of Google Chrome or Firefox.
+        <br/>
+        Click here for a Windows-friendly version (slightly evil)
+        <br/>
+        Click here for a Macintosh-friendly version (most evil)
+        <br/>
+    </P>
+    <P>
+        Initially, I am hoping to find one or more people who are capable of contributing to creation of a visualization of the music and dialogue in the trailer. 
+        The goal is to produce a computer-generated mini-movie, with detailed backgrounds, compelling characters, animated (with lipsynch), and rendered at a resolution  
+        appropriate for online delivery (Youtube HD quality or better).  I am open to any and all suggestions as to how to move towards this goal, including potential 
+        interim milestones such as a storyboard, character and scene designs, 'pre-visualization', and so on. Ideas off the beaten path will be entertained, as long as 
+        they are at least somewhat relevant to the stated goal.  This (the visual side) is not presently in my wheelhouse, so I expect to be educated/surprised/inspired/amazed.
+    </P>
+    <P>
+        About the project:
+    </P>
+    <P>
+        Morashon is a work of cinematic musical theater that I am attempting to develop using the principles of Open Source as they are traditionally applied to software 
+        (http://en.wikipedia.org/wiki/Open_source).  The project is licensed under the Creative Commons Attribution 3.0 Unported license (http://creativecommons.org/licenses/by/3.0/).  
+        CC licenses are to general creative works what Open Source licenses are to software.  The CC 3.0 license I have chosen is roughly equivalent to the BSD and MIT software 
+        licenses.  It is a permissive license, in that anyone is free to change the work or use it for commercial purposes, as long as they give proper credit to the original authors.  
+        If you choose to collaborate with me on this project, you will by definition become a co-author, and will be credited as such for your contributions. You will be free to 
+        distribute the final product, or any version you or anyone else creates, to anyone you like, free of any obligations other than attribution (credits) as required by the license.  
+        The end goal is to develop a complete, feature-length movie, capable of being distributed online, on DVD, and (who knows? stranger things have happened) for theatrical release.
+    </P>
+    <div>
+        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
+            Thoughts regarding art, commerce, copyright, and culture
+        </div>
+        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
+            Thoughts regarding art, commerce, copyright, and culture
+        </div>
+        <div style="padding-left:20px;font-family;display:none">
+        <P>
+            When the history of our era is written, I believe that the introduction of the Internet, and the digitization of the bulk of human communication (including the storage and 
+            retrieval of works in various media) will be seen as the seminal event of our time.  Creations that fail to enter into the digital realm in a full and unencumbered fashion 
+            will, for all intents and purposes, not exist in our history -- at least for the great mass of the population.  One vector into digital immortality is a significant measure 
+            of fame in popular culture; the Beatles legacy is well protected, due to their popularity and commercial success.  The fate of less celebrated artists and creators is obviously 
+            less certain.  Even if an obscure work is digitized and nominally made available, if it fails to reach the notability requirements of Wikipedia -- if it fails to be properly 
+            indexed by Google's search algorithm -- then, for all practical purposes, it may be lost as well; hidden in plain sight as it were, because it cannot be easily discovered by 
+            those with casual interest in the particular genre.  These days, failing a winning stint on American Idol or other even more vacuous reality-based enterprises, the road to 
+            recognition is crowded and hard-fought, and the results, even for works of great worth, are often sadly disappointing.
+        </P>
+        <P>
+            Along with the mass digitization of the majority of our cultural artifacts, we have witnessedthe great commodification of what might once have been called art -- that which 
+            is produced by the 'entertainment industry'.  In spite of the sorry state of popular culture, there are obviously still true artists at work, sprinkled in among the dreary, 
+            uninspired sequels, knock-offs, and plain lowest-common-denominator media equivalent of junk food, bereft of any semblance of what was once quaintly referred to as "socially 
+            redeeming value".  One problem with this state of affairs (among many more obvious and well-noted problems) is the result that even the best of what our culture has to offer, 
+            in every genre and medium, is almost by definition the "product" of some media company, typically a public for-profit corporation with fiduciary responsibility to maximize 
+            profits for its shareholders.  Thus the work of Britney Spears, the Beatles, and Philip Glass are, from a commercial standpoint, indistinguishable with respect to the status 
+            of their works as pieces of intellectual property.  The films of Stanley Kubrick and those of Jerry Bruckheimer are simply two sets of 'catalog' owned by various corporations.
+        </P>
+        <P>
+            Why does any of this matter? Because for-profit corporations use intellectual property laws to greatly control and restrict access to their property.  They engage in massive 
+            lobbying efforts to ensure that such laws are written in their favor.  They have no economic interest or obligation (as they see it) to be concerned about the relationship 
+            between the works that they own and control, and the cultural heritage that some fraction of those works may represent.  They have successfully lobbied the US congress (and 
+            other governments) to repeatedly extend the life of copyright, ensuring that works even 90 years old are not available as part of the public domain.  Copyright was not originally 
+            conceived as a right that an artist would typically sell to a corporation to control in perpetuity, but that is the state of affairs as it exists today.  None of the work of 
+            Disney, or the musicals of the 30's and 40's, or the Beatles, or Elvis Presley, or Frank Sinatra, Miles Davis, etc. and so on -- none of what many would argue is the product of a 
+            great new age of media, the last two thirds of the 20th century -- will, as things stand today, ever enter into the public domain.  They cannot be copied, distributed, edited, or 
+            even usefully commented on (commentary added to the original) without being swallowed in a mire of legal and accounting obligations.  For works of world renown, this is only a 
+            minor annoyance.  Celebrated works are typically made available at reasonable cost by the media companies who stand to make money from their back catalog.  For more obscure and 
+            less profitable artists, however, the long-term picture is quite bleak.  There are many thousands (if not millions) of books out of print, but whose copyright holders still refuse 
+            to release into the public domain (if they can even be determined and contacted).  Many works of music, film, and writing are now in this purgatory of less than superstar fame but 
+            encumbered by perennial copyright due to their original contracts with their distributors.  The media companies have little incentive to clear up this mess, as in their view a 
+            corpus of old, free works with potential to entertain and inform could compete with their need to constantly turn over their product and sell the latest, trendiest popular cruft 
+            to the consuming public.
+        </P>
+        <P>
+            Emblematic of the problem -- to this day, if there is a birthday scene in a movie, you will almost never hear the strains of "Happy Birthday" 
+            (see http://en.wikipedia.org/wiki/Happy_Birthday_to_You) -- even though that is what we all sing at every birthday party.  Small matter -- in movies, you hear "For He's A Jolly 
+            Good Fellow" (a bit awkward for birthday girls!)  But it just makes the point that ownership of creative works that are controlled in perpetuity creates a barrier to properly
+            archiving and representing life as we actually live it.
+        </P>
+        <P>
+            In software, we have something called "Open Source" (and/or "Free Software"; there are internecine battles regarding these phrases that need not concern us here. If interested: 
+            http://en.wikipedia.org/wiki/Alternative_terms_for_free_software).  Open Source software is created with the express purpose of allowing anyone to have access to useful computer 
+            software without restrictions -- as long as the original inventor(s) of the work are given due credit. In some instances, modification and commercial distribution are restricted; 
+            in other cases, the only restriction is the requirement of attribution.  In all cases, the result is that the software cannot, due to the legal force of the licenses used, be
+            co-opted by corporations or other business interests in an exclusive fashion.  Unlike typical commercial software from companies such as Microsoft or Apple, Open Source software
+            can always be copied to any machine or medium one desires; it can be freely distributed to your friends, or indeed publicly distributed anonymously, for anyone to download themselves.  
+            Without going into great detail as to how this work is funded (there's a plethora of information you can Google) -- note that pieces of Open Source software are utilized as components 
+            in numerous commercial products and services, and deliver the bulk of Internet traffic, including from major  companies such as Amazon, Facebook, and Google.
+        </P>
+        <P>
+            Creative Commons is the analog of Open Source in other fields of endeavor, such as music, film, and written works.  The idea is to offer a legal and ethical framework within which a
+            rtists and creators can choose to have their works protected from appropriation, but allow distribution and copying with some restrictions, such as (at a minimum) requiring proper 
+            attribution of credit to the original author(s).  Licensing one's work in this way does not, incidentally, mean one can no longer sell one's work -- you are free to continue selling 
+            books, records,  iTunes downloads, and film tickets.  However, it is true that your works can now also be distributed freely, so there may be cases where potential paying customers 
+            will be able to acquire your works without compensation.  On the other hand, licensing one's work under Creative Commons provides a chance for your work to effectively be in the public 
+            domain, with the proviso that your authorship will be noted and respected.  There is a small but vibrant and growing community of artists, musicians, writers, and other creative folk 
+            who want to contribute to our common cultural heritage, bypassing the typical corporate pathway, with all its encumbrances and limitations.  Our goal is to create a corpus of work that 
+            can fairly compete with, and provide legitimate counterbalance to the Disneys and Viacoms and News Corps of the world, whose dedication to the public trust and welfare is limited at best.
+        </P>
+        <P>
+            When people first started talking about Open Source software, they were commonly derided as utopia-addled fools and worse.  Now, it is a legitimate driving force behind much of the 
+            software industry.  Rather than replace proprietary products from Microsoft and Apple, what it does is keep those companies in check.  Microsoft must now contend with the fact that 
+            LibreOffice can do almost everything their expensive Office software can do.  Linux competes with Windows and OSX, making it harder to engage in 'vendor lock-in' and predatory practices.  
+            Some commercial companies are willing to forego profits in some sectors to support Open Source alternatives to royalty-encumbered technologies.  By way of example, Google acquired a 
+            company whose video codec WebM (formerly known as VP8) helps to ensure that a powerful group of patent holders (MPEG-LA) cannot restrict the ability of artists and independent studios 
+            to distribute their audio/video works freely and openly on the Internet.
+        </P>
+        <P>
+            In a  similar fashion, I am hopeful that the Creative Commons movement will provide a legitimate alternative pathway for creators of all stripes to get their work out to the public, and 
+            reach their intended audience without a low-value middleman standing between producer and consumer.  As in the Open Source case, I doubt this will spell the end of publishing houses, movie 
+            studios, and record companies -- but it might provide a much-needed check on their tendency to mop up every bit of culturally relevant work and smack a barcode on it, charging a tithe 
+            every time we sing "Happy Birthday".
+        </P>
+        </div>
+    </div>
+    <P>
+         At present, the 'source code' for the work is hosted at Github (http://github.com/morashon/morashon). 
+        
+    </P>
+    <div>
+        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
+            Thoughts about collaborative tools, workflow, etc
+        </div>
+        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
+            Thoughts about collaborative tools, workflow, etc
+        </div>
+        <div style="padding-left:20px;display:none">
+        <P>
+            Ugh, what can I say.  Truly, the technical state of the project, judged on terms one would normally apply to an Open Source initiative, is abysmal.  Keep in mind, this has been the part-time 
+            labor of love of a lone lunatic, bereft of the benefit of hordes of assistants and cleaner-uppers to clear the deck of dreck after each messy landing.  In my defence, the state of affairs with 
+            regard to the tools I am using (without which I could never have gotten this far for sure) is not amenable to the kind of automated build processes that are standard and in fact a requirement 
+            for serious software development.  As a software engineer, I am insulted by my own state of affairs.  As a creative artist, I plead not guilty by way of needing to follow my muse when it felt 
+            like striking.  In other words, best engineering practices have taken a back seat to "getting it done".
+        </P>
+        <P>
+            This sort of situation is (nominally) acceptable for a single contributing individual, but clearly not ideal, or in fact even workable, if a team of people ends up involved in the project.  I 
+            fully acknowledge that much work is in store to clean up the mess.   Python and bash scripts are smattered about, used in conjunction with wonky manual export processes.  TBH, I have little idea 
+            how this sort of thing is managed by large Hollywood studios.  I can say that in my experience as a musician and recording technician, I have seen some pretty dismal digital work environments, 
+            and this is simply another one.  I confess that I have never before worked on a serious long-form project, that incorporated dialogue, songs, incidental music, and effects into a 2.5 hour final 
+            mix, so much of this was a real trial-by-fire.  I am sure there are folk out there who could (and hopefully will) give me a piece of their mind on how to (and how not to) structure this kind of 
+            endeavor.
+        </P>
+        <P>
+            One constant technical limitation has been Git's aversion to large binary files. In addition, I have found empirically that any Git repo that grows much beyond 3 gigabytes (size of everything in 
+            one's .git folder) does not fare well with the present version (1.7.x). With the addition of visual materials, we will almost certainly explode both Git and github's capacity to handle things.  
+            New techniques will be required (I recall seeing some articles about using Git to process handles to large binary files, managing the actual file data on dropbox or equivalent...)  Regardless of 
+            the question of artistic merit, this project could end up spinning off some useful software. I look forward to ideas and volunteers.
+        </P>
+        <P>
+            If there are folk about who find the software side of things interesting in its own right -- in particular, using synthesized voices for singing and directed dialogue -- I am all for pulling 
+            those features into a legitimate FOSS project of its own.  Contact me at morashon@morashon.com.
+        </P>
+        <P>
+            If any of these software challenges end up getting traction, I am well versed in freenode and IRC, and ready to roll up some new github repos.
+        </P>
+        </div>
+    </body>
 </html>
