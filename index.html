@@ -65,10 +65,101 @@
         The end goal is to develop a complete, feature-length movie, capable of being distributed online, on DVD, and (who knows? stranger things have happened) for theatrical release.
     </P>
     <P>
-         At present, the 'source code' for the work is hosted at Github (http://github.com/morashon/morashon). 
+         The 'source code' for the work is presently hosted at Github (http://github.com/morashon/morashon).
     </P>
     <P>
         Click the subject headers below if you hunger for more details.
+    </P>
+    <div>
+        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
+            State of the art
+        </div>
+        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
+            State of the art
+        </div>
+        <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
+        <P>
+            Nothing visual exists so far, unless you count the stage directions.  There is a book (spoken words) [link], and a score (music and lyrics).  There are recordings of all the songs [link to mixes], 
+            and of the spoken dialogue. (contact me if you are interested, it's a big file).  Every word, spoken or sung, has been voiced using software I adapted from Festival, an open-source speech 
+            synthesizer [link].  I created my own markup language to control phrasing and intonation (one might refer to this as a modern-day case of virtual <i>recitative</i>). 
+        </P>
+        <P>
+            To my sensibilities, the music and singing are right where I want them to be, though I occasionally get inspired to tweak a mix here or there.  The spoken dialogue is something new and experimental, 
+            and I am still in the process of refining it to my liking (and to be honest, to the point where it plays well with others -- early critics have been harsh in some cases).  The trailer is representative 
+            of the techniques used throughout the piece.
+        </P>
+    </div>
+    <P>
+    </P>
+    <div>
+        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
+            State of the technology
+        </div>
+        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
+            State of the technology
+        </div>
+        <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
+        <P>
+            In the course of developing this work, I have attempted to apply Open Source methods wherever possible. Quite a bit of actual software code is involved, as I modified various bits of existing
+            Open Source packages, as well as writing a number of scripts in Python (and a ham-handed try at some Scheme in Festival!).  
+            The greatest challenge was not managing source code, which tools like Git and services such as github are well suited for (not to say
+            my code engineering processes and practices have been anything to write home about).  
+            The difficulty came in trying to apply the sensibility I use developing software to the music and dialogue itself.  I felt it was essential
+            that this project include access to the actual 'source code' of the creative result -- sequencer tracks, multitrack sound files, myriad bits and pieces that are then spliced and diced into
+            something like a final production. And, I wanted all of that stuff to exist in the revision history, just as it does for code.
+        <P>
+        </P>
+            Judged on terms one would normally apply to an Open Source code project, I feel like it has been a limited success.  Keep in mind, this has been the part-time 
+            labor of love of a lone lunatic, bereft of the benefit of hordes of assistants and cleaner-uppers to clear the deck of dreck after each messy landing.  In my defence, the state of affairs with 
+            regard to the tools I am using (without which I could never have gotten this far for sure) is not amenable to the kind of automated build processes that are standard and in fact a requirement 
+            for serious software development.  As a software engineer, I am frustrated and somewhat embarassed by this state of affairs.  As a creative artist, I plead not guilty by way of 
+            needing to follow my muse when it felt like striking.  In other words, best engineering practices have taken a back seat to "getting it done".
+        </P>
+        <P>
+            This sort of situation is (nominally) acceptable for a single contributing individual, but clearly not ideal, or in fact even workable, if a team of people ends up involved in the project.  I 
+            fully acknowledge that much work is in store to clean up the mess.   Python and bash scripts are smattered about, used in conjunction with wonky manual export processes.  TBH, I have little idea 
+            how this sort of thing is managed by large (or small) Hollywood studios, and the professionals who do this sort of thing every day.  
+            I can say that in my experience as a musician and recording technician, I have seen some pretty dismal digital work environments, 
+            and this is simply another one.  I confess that I have never before worked on a serious long-form project that incorporated dialogue, songs, incidental music, and effects into a 2.5 hour final 
+            mix, so much of this was a real trial-by-fire.  I am sure there are folk out there who could (and hopefully will) give me a piece of their mind on how to (and how not to) structure this kind of 
+            endeavor.
+        </P>
+        <P>
+            One constant technical limitation has been Git's aversion to large binary files. In addition, I have found empirically that any Git repo that grows much beyond 3 gigabytes (size of everything in 
+            one's .git folder) does not fare well with the present version (1.7.x). With the addition of visual materials, we will almost certainly explode both Git and github's capacity to handle things.  
+            New techniques will be required (I recall seeing some articles about using Git to process handles to large binary files, managing the actual file data on dropbox or equivalent...)  Regardless of 
+            the question of artistic merit, this project could end up spinning off some useful software. I look forward to ideas and volunteers.
+        </P>
+        <P>
+            If there are folk about who find the software side of things interesting in its own right -- in particular, using synthesized voices for singing and directed dialogue -- I am all for pulling 
+            those features into a legitimate FOSS project of its own.  Contact me at morashon@morashon.com.
+        </P>
+        <P>
+            If any of these software challenges end up getting traction, I am well versed in freenode and IRC, and ready to roll up some new github repos.
+        </P>
+        </div>
+        <P>
+        </P>
+        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
+            Who Am I
+        </div>
+        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
+            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
+            Who Am I
+        </div>
+        <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
+        <P>
+            <b>Morashon</b> is the pseudonym (pen name) I have chosen as the author of record for the parts of this work created by me.  A good internet sleuth could probably track down my real-world identity 
+            if they really felt the need to do so.  I respectfully ask that viewers and collaborators not bother, as I prefer to take credit for this work under this moniker for now.
+        </P>
+        </div>
+    </div>
+    <P>
     </P>
     <div>
         <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
@@ -158,86 +249,7 @@
         </div>
     </div>
     <P>
+        Contact: morashon at morashon dot com
     </P>
-    <div>
-        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
-            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
-            Thoughts about collaborative tools, workflow, etc
-        </div>
-        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
-            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
-            Thoughts about collaborative tools, workflow, etc
-        </div>
-        <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
-        <P>
-            Ugh, what can I say.  Truly, the technical state of the project, judged on terms one would normally apply to an Open Source initiative, is abysmal.  Keep in mind, this has been the part-time 
-            labor of love of a lone lunatic, bereft of the benefit of hordes of assistants and cleaner-uppers to clear the deck of dreck after each messy landing.  In my defence, the state of affairs with 
-            regard to the tools I am using (without which I could never have gotten this far for sure) is not amenable to the kind of automated build processes that are standard and in fact a requirement 
-            for serious software development.  As a software engineer, I am insulted by my own state of affairs.  As a creative artist, I plead not guilty by way of needing to follow my muse when it felt 
-            like striking.  In other words, best engineering practices have taken a back seat to "getting it done".
-        </P>
-        <P>
-            This sort of situation is (nominally) acceptable for a single contributing individual, but clearly not ideal, or in fact even workable, if a team of people ends up involved in the project.  I 
-            fully acknowledge that much work is in store to clean up the mess.   Python and bash scripts are smattered about, used in conjunction with wonky manual export processes.  TBH, I have little idea 
-            how this sort of thing is managed by large Hollywood studios.  I can say that in my experience as a musician and recording technician, I have seen some pretty dismal digital work environments, 
-            and this is simply another one.  I confess that I have never before worked on a serious long-form project, that incorporated dialogue, songs, incidental music, and effects into a 2.5 hour final 
-            mix, so much of this was a real trial-by-fire.  I am sure there are folk out there who could (and hopefully will) give me a piece of their mind on how to (and how not to) structure this kind of 
-            endeavor.
-        </P>
-        <P>
-            One constant technical limitation has been Git's aversion to large binary files. In addition, I have found empirically that any Git repo that grows much beyond 3 gigabytes (size of everything in 
-            one's .git folder) does not fare well with the present version (1.7.x). With the addition of visual materials, we will almost certainly explode both Git and github's capacity to handle things.  
-            New techniques will be required (I recall seeing some articles about using Git to process handles to large binary files, managing the actual file data on dropbox or equivalent...)  Regardless of 
-            the question of artistic merit, this project could end up spinning off some useful software. I look forward to ideas and volunteers.
-        </P>
-        <P>
-            If there are folk about who find the software side of things interesting in its own right -- in particular, using synthesized voices for singing and directed dialogue -- I am all for pulling 
-            those features into a legitimate FOSS project of its own.  Contact me at morashon@morashon.com.
-        </P>
-        <P>
-            If any of these software challenges end up getting traction, I am well versed in freenode and IRC, and ready to roll up some new github repos.
-        </P>
-        </div>
-        <P>
-        </P>
-        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
-            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
-            State of the art
-        </div>
-        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
-            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
-            State of the art
-        </div>
-        <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
-        <P>
-            Nothing visual exists so far, unless you count the stage directions.  There is a book (spoken words) [link], and a score (music and lyrics).  There are recordings of all the songs [link to mixes], 
-            and of the spoken dialogue. (contact me if you are interested, it's a big file).  Every word, spoken or sung, has been voiced using software I adapted from Festival, an open-source speech 
-            synthesizer [link].  I created my own markup language to control phrasing and intonation (one might refer to this as a modern-day case of virtual <i>recitative</i>). 
-        </P>
-        <P>
-            To my sensibilities, the music and singing are right where I want them to be, though I occasionally get inspired to tweak a mix here or there.  The spoken dialogue is something new and experimental, 
-            and I am still in the process of refining it to my liking (and to be honest, to the point where it plays well with others -- early critics have been harsh in some cases).  The trailer is representative 
-            of the techniques used throughout the piece.
-        </P>
-        </div>
-        <P>
-        </P>
-        <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
-            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
-            Who Am I
-        </div>
-        <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
-            <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
-            Who Am I
-        </div>
-        <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
-        <P>
-            <b>Morashon</b> is the pseudonym (pen name) I have chosen as the author of record for the parts of this work created by me.  A good internet sleuth could probably track down my real-world identity 
-            if they really felt the need to do so.  I respectfully ask that viewers and collaborators not bother, as I prefer to take credit for this work under this moniker for now.
-        </P>
-        </div>
-        <P>
-            Contact: morashon at morashon dot com
-        </P>
     </body>
 </html>
