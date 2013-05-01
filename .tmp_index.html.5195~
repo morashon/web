@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+        <script type="text/javascript">
+            //<![CDATA[
+            function stMore(me){
+                var lesstext = me.nextElementSibling;
+                var more = lesstext.nextElementSibling;
+                me.style.display="none";
+                lesstext.style.display="";
+                more.style.display="";
+            }
+            function stLess(me){
+                var moretext = me.previousElementSibling;
+                var more = me.nextElementSibling;
+                moretext.style.display="";
+                me.style.display="none";
+                more.style.display="none";
+            }
+            //]]>
+        </script>
+	</head>
+	<body>
+	    main text
+	    <div>
+            <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
+    	        <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span> 
+                More information
+            </div>
+            <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
+                <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span> 
+                Less information
+            </div>
+            <div style="display:none;color:black;position:relative;left:20px">
+                here is more information<br/>on the subject you requested
+            </div>
+	    </div>
+        further text
+	</body>
+</html>
