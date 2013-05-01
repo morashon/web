@@ -34,16 +34,13 @@
         This is the home page of <i>Morashon</i>, a creative work being developed as an Open Source project.  I am seeking collaborators who are able and willing to help me realize my vision.
     </P>
     <P>
-        Links to the trailer:
+        Download the trailer:
         <br/>
-        Click here for the webm version.  WebM is a great new open format supported by 
-        Google [link to webm site]. 
-        It should work in any recent version of Google Chrome or Firefox.
+        <a href="trailer1.webm">trailer1.webm</a>  WebM is a great new open format sponsored by 
+        <a href="http://www.webmproject.org/">Google</a>. Works in any recent version of Firefox or Chrome.
         <br/>
-        Click here for a Windows-friendly version (slightly evil)
-        <br/>
-        Click here for a Macintosh-friendly version (most evil)
-        <br/>
+        <a href="trailer1.avi">trailer1.avi</a>  Windows/IE friendly version (slightly evil)<br/>
+        <a href="trailer1.mov">trailer1.mov</a>  Mac/Safari friendly version (more evil)<br/>
     </P>
     <P>
         Initially, I am hoping to find one or more people who are capable of contributing to creation of a visualization of the music and dialogue in the trailer. 
@@ -53,11 +50,13 @@
         they are at least somewhat relevant to the stated goal.  This (the visual side) is not presently in my wheelhouse, so I expect to be educated/surprised/inspired/amazed.
     </P>
     <P>
-        About the project:
+        <h3>About the project</h3>
     </P>
     <P>
-        Morashon is a work of cinematic musical theater that I am attempting to develop using the principles of Open Source as they are traditionally applied to software 
-        (http://en.wikipedia.org/wiki/Open_source).  The project is licensed under the Creative Commons Attribution 3.0 Unported license (http://creativecommons.org/licenses/by/3.0/).  
+        Morashon is a cinematic work of music and drama that I am attempting to develop using the principles of Open Source as they are traditionally applied to software 
+        (<a href="http://en.wikipedia.org/wiki/Open_source">wikipedia.org/wiki/Open_source</a>).  
+        The project is licensed under the 
+        <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported license</a>.  
         CC licenses are to general creative works what Open Source licenses are to software.  The CC 3.0 license I have chosen is roughly equivalent to the BSD and MIT software 
         licenses.  It is a permissive license, in that anyone is free to change the work or use it for commercial purposes, as long as they give proper credit to the original authors.  
         If you choose to collaborate with me on this project, you will by definition become a co-author, and will be credited as such for your contributions. You will be free to 
@@ -65,7 +64,7 @@
         The end goal is to develop a complete, feature-length movie, capable of being distributed online, on DVD, and (who knows? stranger things have happened) for theatrical release.
     </P>
     <P>
-         The 'source code' for the work is presently hosted at Github (http://github.com/morashon/morashon).
+         The 'source code' for the work is presently hosted at <a href="http://github.com/morashon/morashon">github</a>.
     </P>
     <P>
         Click on the subject headers below if you hunger for more details.
@@ -81,13 +80,31 @@
         </div>
         <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
         <P>
-            Nothing visual exists so far, unless you count the stage directions.  There is a book (spoken words) [link], and a score (music and lyrics).  There are recordings of all the songs [link to mixes], 
-            and of the spoken dialogue. (contact me if you are interested, it's a big file).  Every word, spoken or sung, has been voiced using software I adapted from Festival, an open-source speech 
-            synthesizer [link].  I created my own markup language to control phrasing and intonation (one might refer to this as a modern-day case of virtual <i>recitative</i>). 
+            My approach has been to try to create a plausible soundtrack of the movie. Nothing visual exists so far, unless you count the stage directions.  
+            There is a  
+            <a href="https://github.com/morashon/morashon/blob/master/script.txt">book</a> 
+            (spoken words and lyrics -- possibly a bit out of date),
+            a <a href="https://github.com/morashon/morashon/tree/sheetmusic/sheetmusic">score</a> (notation exports from my sequencer tracks)</a>, and 
+            recordings of the songs (link coming soon).
+            I am presently working on a rough rendition of the entire piece as an audio soundtrack, with dialogue, incidental music, and songs in a proper mix. 
+        </P>
+        <P>
+            Every word, spoken or sung, has been voiced using software I adapted from 
+            <a href="http://www.cstr.ed.ac.uk/projects/festival/">Festival</a>,
+            an amazing Open Source speech synthesizer.  I wrote 
+            <a href="https://github.com/morashon/morashon/blob/master/py/rg2fest.py">some code</a> 
+            to extract data from the 
+            <a href="https://github.com/morashon/morashon/tree/master/score">Rosegarden sequencer data</a> 
+            and produce Festival-compatible singing files.
+        </P>
+        <P>
+            I have created my own 
+            <a href="https://github.com/morashon/morashon/blob/master/py/text2fest.py">markup language</a> 
+            to control phrasing and intonation (one might refer to this as a modern-day case of virtual <i>recitative</i>). 
         </P>
         <P>
             To my sensibilities, the music and singing are right where I want them to be, though I occasionally get inspired to tweak a mix here or there.  The spoken dialogue is something new and experimental, 
-            and I am still in the process of refining it to my liking (and to be honest, to the point where it plays well with others -- early critics have been harsh in some cases).  The trailer is representative 
+            and I am still in the process of refining it to my satisfaction.  The trailer is representative 
             of the techniques used throughout the piece.
         </P>
     </div>
@@ -96,16 +113,18 @@
     <div>
         <div onClick="stMore(this)" style="color:blue;cursor:pointer;display:">
             <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">+</span>
-            State of the technology
+            State of the process
         </div>
         <div onClick="stLess(this)" style="color:blue;cursor:pointer;display:none">
             <span style="font-family:monospace;font-size:larger;background-color:#cceeff;margin-left:3px;padding-left:3px;margin-right:1px;padding-right:3px">-</span>
-            State of the technology
+            State of the process
         </div>
         <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
         <P>
             In the course of developing this work, I have attempted to apply Open Source methods wherever possible. Quite a bit of actual software code is involved, as I modified various bits of existing
-            Open Source packages, as well as writing a number of scripts in Python (and a ham-handed try at some Scheme in Festival!).  
+            Open Source packages, as well as writing a number of scripts in Python (and a 
+            <a href="https://github.com/morashon/morashon/blob/master/festival/libretto-mode.scm">ham-handed try at some Scheme</a> 
+            in Festival!).  
             The greatest challenge was not managing source code, which tools like Git and services such as github are well suited for (not to say
             my code engineering processes and practices have been anything to write home about).  
             The difficulty came in trying to apply the sensibility I use developing software to the music and dialogue itself.  I felt it was essential
@@ -136,7 +155,7 @@
         </P>
         <P>
             If there are folk about who find the software side of things interesting in its own right -- in particular, using synthesized voices for singing and directed dialogue -- I am all for pulling 
-            those features into a legitimate FOSS project of its own.  Contact me at morashon@morashon.com.
+            those features into a legitimate FOSS project of its own.  Contact me at: morashon at morashon dot com.
         </P>
         <P>
             If any of these software challenges end up getting traction, I am well versed in freenode and IRC, and ready to roll up some new github repos.
@@ -192,13 +211,15 @@
         </P>
         <P>
             Emblematic of the problem -- to this day, if there is a birthday scene in a movie, you will almost never hear the strains of "Happy Birthday" 
-            (see http://en.wikipedia.org/wiki/Happy_Birthday_to_You) -- even though that is what we all sing at every birthday party.  Small matter -- in movies, you hear "For He's A Jolly 
+            (see <a href="http://en.wikipedia.org/wiki/Happy_Birthday_to_You">wikipedia.org/wiki/Happy_Birthday_to_You</a>)
+            -- even though that is what we all sing at every birthday party.  Small matter -- in movies, you hear "For He's A Jolly 
             Good Fellow" (a bit awkward for birthday girls!)  But it just makes the point that ownership of creative works that are controlled in perpetuity creates a barrier to properly
             archiving and representing life as we actually live it.
         </P>
         <P>
-            In software, we have something called "Open Source" (and/or "Free Software"; there are internecine battles regarding these phrases that need not concern us here. If interested: 
-            http://en.wikipedia.org/wiki/Alternative_terms_for_free_software).  Open Source software is created with the express purpose of allowing anyone to have access to useful computer 
+            In software, we have something called "Open Source" (and/or "Free Software"; there are internecine battles regarding these phrases that need not concern us here. If interested:
+            <a href="http://en.wikipedia.org/wiki/Alternative_terms_for_free_software">wikipedia.org/wiki/Alternative_terms_for_free_software</a>).  
+            Open Source software is created with the express purpose of allowing anyone to have access to useful computer 
             software without restrictions -- as long as the original inventor(s) of the work are given due credit. In some instances, modification and commercial distribution are restricted; 
             in other cases, the only restriction is the requirement of attribution.  In all cases, the result is that the software cannot, due to the legal force of the licenses used, be
             co-opted by corporations or other business interests in an exclusive fashion.  Unlike typical commercial software from companies such as Microsoft or Apple, Open Source software
@@ -263,13 +284,15 @@
         </div>
         <div style="background-color:#d4d4d4;margin-left:20px;margin-right:22px;margin-top:14px;padding-left:14px;padding-top:1px;padding-right:14px;padding-bottom:1px;display:none">
         <P>
-            Well, this is how I roll my hand-crafted html + js droppings. If someone wants to get involved and set up some wordsqueeze, smashflow or whatever the trend is in UI design, please get involved.  
+            Well, this is how I roll my hand-crafted html + js droppings. If someone wants to get involved and set up some wordsqueeze, smashflow, or whatever the latest trend is in webistic
+            platform delivery/UI design, by all means knock yourself out.  
             My goal with this page
-            was simply to lay out some pertinent information and hopefully make contact with future collaborators. Visual expression is not my first vocabulary.
+            was simply to lay out some pertinent information, and hopefully make contact with potential collaborators. Visual expression is not my first vocabulary.
         </P>
     </div>
     <P>
-        All material on this site is licensed under the Creative Commons Attribution 3.0 Unported license (http://creativecommons.org/licenses/by/3.0/)
+        All material on this site is licensed under the 
+        <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported license</a>.
     </P>
     <P>
         &copy; 2013 by Morashon &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
