@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+import sys, os
+
+def q(s):
+    return '"' + s + '"'
+
+song = sys.argv[1]
+track = int(song[0:1])
+
+for fmt in ("ogg","mp3"):
+    cmd = "sox " + q(song) + " -C " + ("192 " if fmt=="mp3" else "5 ") + q(song[:-3] + fmt)
+    print cmd
+    os.system(cmd)
+    cmd = "eyeD3 -Y 2013 -a Morashon -A Morashon -t " + q(song[2:-4]) + " -n " + str(track)
+    cmd += ' "--comment=:LICENSE:Creative Commons Attribution 3.0 Unported"'
+    cmd += " " + q(song[:-3] + fmt)
+    print cmd
+    os.system(cmd)
